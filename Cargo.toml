@@ -1,0 +1,21 @@
+[package]
+name = "axum-tg-bot"
+version = "0.1.0"
+edition = "2021"
+authors = ["axum.rs <team@axum.rs>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/axumrs/axum-tg-bot"
+homepage = "https://axum.rs"
+description = "使用AXUM开发的 Telegram 机器人"
+
+[dependencies]
+tokio = { version = "1", features = ["full"]}
+axum = "0.6"
+serde = { version="1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.11", features = ["json"] }
+config = "0.13"
+
+[dev-dependencies]
+dotenv = "0.15"
